@@ -3,11 +3,11 @@ CREATE TABLE candy(
     PRIMARY KEY(candy_type)
 );
 --To Test
-INSERT INTO candy(candy_type, candy_is_wrap) VALUES ("Chocolate", "YES")
-INSERT INTO candy(candy_type, candy_is_wrap) VALUES ("Gum", "YES")
-INSERT INTO candy(candy_type, candy_is_wrap) VALUES ("Lollipop", "NO")
-INSERT INTO candy(candy_type, candy_is_wrap) VALUES ("Hard Candy", "YES")
-INSERT INTO candy(candy_type, candy_is_wrap) VALUES ("Sour Candy", "YES")
+INSERT INTO candy(candy_type) VALUES ("Chocolate")
+INSERT INTO candy(candy_type) VALUES ("Gum")
+INSERT INTO candy(candy_type) VALUES ("Lollipop")
+INSERT INTO candy(candy_type) VALUES ("Hard Candy")
+INSERT INTO candy(candy_type) VALUES ("Sour Candy")
 
 --To be used for when a user orders candy.
 CREATE TABLE UserOrder(
@@ -18,4 +18,3 @@ CREATE TABLE UserOrder(
     FOREIGN KEY(user_sweet) REFERENCES candy(candy_type),
     FOREIGN KEY(buyer) REFERENCES User_T(user_name)
 );
-INSERT INTO UserOrder(order_id, order_date, user_sweet, buyer) VALUES ("Sour Candy", "Sour Patch Kids", "YES")
