@@ -1,0 +1,15 @@
+.selling{
+	width: 100vw;
+	// height: 65vh;
+	background-color: orange;
+	
+	padding: 25px;
+	
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	row-gap: 25px;
+	justify-items: center;
+	align-items: center;
+	// grid-template-rows: 1fr
+}
