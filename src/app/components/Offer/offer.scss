@@ -1,0 +1,29 @@
+$card-width: 15vw;
+
+.offer{
+	width: $card-width;
+	background-color: rgb(33, 236, 216);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	img {
+		height: calc($card-width * 0.75);
+		width: calc($card-width * 0.75);
+	}
+	// width: 100vw;
+	// // height: 65vh;
+	// background-color: orange;
+	// 
+	// padding: 25px;
+	// 
+	// display: grid;
+	// grid-template-columns: repeat(3, 1fr);
+	// grid-template-rows: auto;
+	// row-gap: 25px;
+	// justify-items: center;
+	// align-items: center;
+	// // grid-template-rows: 1fr
+}
+
